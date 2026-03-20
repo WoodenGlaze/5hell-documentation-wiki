@@ -1,5 +1,9 @@
 # 5hell documentation | Wiki style
 
+## You can safely ignore the version control notification.
+
+
+
 I suck at writing these, and i refuse to use AI for it lmao, so here's some documentation you can click through
 
 If you prefer not to run this through docker, in docker/app-data/repository, there are all the source markdown files you can put into a markdown viewer of your liking!
@@ -26,3 +30,9 @@ If you prefer not to run this through docker, in docker/app-data/repository, the
 5.  You should now have a local version of the wiki version of the 5hell documentation.
     
     1.  If you want to edit the wiki, login using `wiki@wiki.com | WikiPass`
+
+
+
+## Projects featured/used:
+5hell: https://github.com/jhook777/5hell-for-Grey-Hack-the-Game (MIT License)
+Otterwiki: https://github.com/redimp/otterwiki (MIT License)
