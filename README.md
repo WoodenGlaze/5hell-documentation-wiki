@@ -14,7 +14,7 @@ If you prefer not to run this through docker, in docker/app-data/repository, the
     
 
 1.  Download this repository:  
-    git clone command: `git clone https://urlhereman`
+    git clone command: `git clone https://github.com/WoodenGlaze/5hell-documentation-wiki.git`
     
 2.  Open a terminal in the folder you downloaded the repository to  
     (Make sure you are in the folder with the docker-compose.yml file)
