@@ -1,0 +1,28 @@
+h1, h2, h3, h4, h5, h6 {
+  position: relative;
+}
+
+.header-link {
+  position: absolute;
+  left: -24px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  cursor: pointer;
+  font-size: 0.8em;
+  padding: 0 4px;
+  color: #aaa;
+}
+
+h1:hover .header-link,
+h2:hover .header-link,
+h3:hover .header-link,
+h4:hover .header-link,
+h5:hover .header-link,
+h6:hover .header-link {
+  opacity: 1;
+}
+
+.header-link:hover {
+  color: #0066cc;
+  text-decoration: none;
+}
