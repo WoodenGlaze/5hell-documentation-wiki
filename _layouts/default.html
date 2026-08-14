@@ -1,92 +1,68 @@
 ---
+layout: default
 ---
 
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  h1, h2, h3, h4, h5, h6 {
+    position: relative;
+  }
+  
+  .header-link {
+    position: absolute;
+    left: -24px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    cursor: pointer;
+    font-size: 0.8em;
+    padding: 0 4px;
+  }
+  
+  h1:hover .header-link,
+  h2:hover .header-link,
+  h3:hover .header-link,
+  h4:hover .header-link,
+  h5:hover .header-link,
+  h6:hover .header-link {
+    opacity: 1;
+  }
+  
+  .header-link:hover {
+    text-decoration: none;
+  }
+</style>
 
-{% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    {% include head-custom.html %}
+{{ content }}
 
-    <style>
-      h1, h2, h3, h4, h5, h6 {
-        position: relative;
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Add copy-to-clipboard links to all headers
+    document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(function(heading) {
+      if (!heading.id) {
+        heading.id = heading.textContent
+          .toLowerCase()
+          .trim()
+          .replace(/[^\w\s-]/g, '')
+          .replace(/\s+/g, '-')
+          .replace(/-+/g, '-');
       }
       
-      .header-link {
-        position: absolute;
-        left: -24px;
-        opacity: 0;
-        transition: opacity 0.2s;
-        cursor: pointer;
-        font-size: 0.8em;
-        padding: 0 4px;
-      }
-      
-      h1:hover .header-link,
-      h2:hover .header-link,
-      h3:hover .header-link,
-      h4:hover .header-link,
-      h5:hover .header-link,
-      h6:hover .header-link {
-        opacity: 1;
-      }
-      
-      .header-link:hover {
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5">
-          <div class="sidebar-shell">
-            {% include sidebar.html %}
-          </div>
-        </div>
-        <div class="col-md-7 main-content">
-          {{ content }}
-        </div>
-      </div>
-    </div>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Add copy-to-clipboard links to all headers
-        document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(function(heading) {
-          if (!heading.id) {
-            heading.id = heading.textContent
-              .toLowerCase()
-              .trim()
-              .replace(/[^\w\s-]/g, '')
-              .replace(/\s+/g, '-')
-              .replace(/-+/g, '-');
-          }
-          
-          const link = document.createElement('a');
-          link.className = 'header-link';
-          link.href = '#' + heading.id;
-          link.textContent = '🔗';
-          link.title = 'Copy link to this section';
-          link.onclick = function(e) {
-            e.preventDefault();
-            const url = window.location.href.split('#')[0] + '#' + heading.id;
-            navigator.clipboard.writeText(url).then(function() {
-              link.textContent = '✓';
-              setTimeout(function() {
-                link.textContent = '🔗';
-              }, 2000);
-            });
-          };
-          
-          heading.appendChild(link);
+      const link = document.createElement('a');
+      link.className = 'header-link';
+      link.href = '#' + heading.id;
+      link.textContent = '🔗';
+      link.title = 'Copy link to this section';
+      link.onclick = function(e) {
+        e.preventDefault();
+        const url = window.location.href.split('#')[0] + '#' + heading.id;
+        navigator.clipboard.writeText(url).then(function() {
+          link.textContent = '✓';
+          setTimeout(function() {
+            link.textContent = '🔗';
+          }, 2000);
         });
-      });
-    </script>
-  </body>
-</html>
+      };
+      
+      heading.appendChild(link);
+    });
+  });
+</script>
