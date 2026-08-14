@@ -1,16 +1,16 @@
 # 5hell Documentation Wiki
 
-[Home](home.md) | [Getting Started](getting-started.md) | [Commands](command_index.md) | [Concepts](5hell-documentation/concepts.md) | [Data Sets](data-sets.md) | [Tools](tools.md)
+[Home](home) | [Getting Started](getting-started) | [Commands](command_index) | [Concepts](5hell-documentation/concepts) | [Data Sets](data-sets) | [Tools](tools)
 
 Community-maintained documentation for Grey Hack 5hell, organized for fast lookup and practical usage.
 
 ## Start Here
 
-- New to this wiki: [Getting Started](getting-started.md)
-- Need syntax fast: [Command Index](command_index.md)
-- Learning mechanics: [Concepts](5hell-documentation/concepts.md)
-- Researching vulnerabilities: [Data Sets](data-sets.md)
-- Looking for external tooling: [Tools](tools.md)
+- New to this wiki: [Getting Started](getting-started)
+- Need syntax fast: [Command Index](command_index)
+- Learning mechanics: [Concepts](5hell-documentation/concepts)
+- Researching vulnerabilities: [Data Sets](data-sets)
+- Looking for external tooling: [Tools](tools)
 
 ## What This Site Covers
 
@@ -23,15 +23,15 @@ Community-maintained documentation for Grey Hack 5hell, organized for fast looku
 
 ### Reference-first path
 
-1. Open [Command Index](command_index.md)
-2. Jump to [5hell Command Reference](5hell-documentation/commands.md)
-3. Use [Concepts](5hell-documentation/concepts.md) for deeper mechanics
+1. Open [Command Index](command_index)
+2. Jump to [5hell Command Reference](5hell-documentation/commands)
+3. Use [Concepts](5hell-documentation/concepts) for deeper mechanics
 
 ### Workflow path
 
-1. Read [Getting Started](getting-started.md)
-2. Study [DO concept](5hell-documentation/concepts/do.md)
-3. Apply examples from [DO example scripts](5hell-documentation/concepts/do/example%20scripts.md)
+1. Read [Getting Started](getting-started)
+2. Study [DO concept](5hell-documentation/concepts/do)
+3. Apply examples from [DO example scripts](5hell-documentation/concepts/do/example%20scripts)
 
 ## Notes
 

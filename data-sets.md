@@ -1,15 +1,15 @@
 # Data Sets
 
-[Home](home.md) | [Getting Started](getting-started.md) | [Commands](command_index.md) | [Concepts](5hell-documentation/concepts.md) | [Data Sets](data-sets.md) | [Tools](tools.md)
+[Home](home) | [Getting Started](getting-started) | [Commands](command_index) | [Concepts](5hell-documentation/concepts) | [Data Sets](data-sets) | [Tools](tools)
 
 Research pages with large extracted data from in-game libraries and exploit behavior.
 
 ## Available Data Pages
 
 - Exploit grouping by library and version:
-  [Exploit Database (Grouped)](5hell-documentation/exploit_database_grouped.md)
+  [Exploit Database (Grouped)](5hell-documentation/exploit_database_grouped)
 - Ranked library safety overview:
-  [Library Safety (Ranked)](5hell-documentation/library_safety_ranked.md)
+  [Library Safety (Ranked)](5hell-documentation/library_safety_ranked)
 
 ## Reading Guidance
 

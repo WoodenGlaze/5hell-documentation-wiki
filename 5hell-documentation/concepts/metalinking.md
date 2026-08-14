@@ -1,6 +1,6 @@
 # Meta Linking
 
-[Home](../../home.md) | [Getting Started](../../getting-started.md) | [Commands](../../command_index.md) | [Concepts](../concepts.md) | [Data Sets](../../data-sets.md) | [Tools](../../tools.md)
+[Home](../../home) | [Getting Started](../../getting-started) | [Commands](../../command_index) | [Concepts](../concepts) | [Data Sets](../../data-sets) | [Tools](../../tools)
 
 Meta linking is the workflow of loading and scanning meta objects from your home machine and reusing that context across sessions.
 
@@ -22,6 +22,6 @@ Meta linking is the workflow of loading and scanning meta objects from your home
 
 ## Related Reading
 
-- [DO scripting and automation](do.md)
-- [Piping command output](piping.md)
-- [Macros](macros.md)
+- [DO scripting and automation](do)
+- [Piping command output](piping)
+- [Macros](macros)

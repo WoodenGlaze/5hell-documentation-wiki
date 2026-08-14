@@ -1,6 +1,6 @@
 # Macros
 
-[Home](../../home.md) | [Getting Started](../../getting-started.md) | [Commands](../../command_index.md) | [Concepts](../concepts.md) | [Data Sets](../../data-sets.md) | [Tools](../../tools.md)
+[Home](../../home) | [Getting Started](../../getting-started) | [Commands](../../command_index) | [Concepts](../concepts) | [Data Sets](../../data-sets) | [Tools](../../tools)
 
 Macros let you save repeatable command chains and execute them quickly.
 
@@ -25,6 +25,6 @@ Macros let you save repeatable command chains and execute them quickly.
 
 ## Related Reading
 
-- [DO scripting and automation](do.md)
-- [Piping command output](piping.md)
-- [Dig command concepts](dig.md)
+- [DO scripting and automation](do)
+- [Piping command output](piping)
+- [Dig command concepts](dig)

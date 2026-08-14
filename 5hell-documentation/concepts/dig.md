@@ -1,6 +1,6 @@
 # Dig
 
-[Home](../../home.md) | [Getting Started](../../getting-started.md) | [Commands](../../command_index.md) | [Concepts](../concepts.md) | [Data Sets](../../data-sets.md) | [Tools](../../tools.md)
+[Home](../../home) | [Getting Started](../../getting-started) | [Commands](../../command_index) | [Concepts](../concepts) | [Data Sets](../../data-sets) | [Tools](../../tools)
 
 DIG v2.1 netcrawler for automated target infiltration workflows.
 
@@ -57,6 +57,6 @@ do 20 dig -s
 
 ## Related Reading
 
-- [Dig examples](dig/examples.md)
-- [DO scripting and automation](do.md)
-- [Piping command output](piping.md)
+- [Dig examples](dig/examples)
+- [DO scripting and automation](do)
+- [Piping command output](piping)

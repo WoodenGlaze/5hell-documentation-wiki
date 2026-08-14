@@ -1,6 +1,6 @@
 # Dig Examples
 
-[Home](../../../home.md) | [Getting Started](../../../getting-started.md) | [Commands](../../../command_index.md) | [Concepts](../../concepts.md) | [Data Sets](../../../data-sets.md) | [Tools](../../../tools.md)
+[Home](../../../home) | [Getting Started](../../../getting-started) | [Commands](../../../command_index) | [Concepts](../../concepts) | [Data Sets](../../../data-sets) | [Tools](../../../tools)
 
 ## Example dig.bat Scripts
 
@@ -33,6 +33,6 @@ exit y
 
 ## Related Reading
 
-- [Dig command concepts](../dig.md)
-- [DO scripting and automation](../do.md)
-- [Piping command output](../piping.md)
+- [Dig command concepts](../dig)
+- [DO scripting and automation](../do)
+- [Piping command output](../piping)

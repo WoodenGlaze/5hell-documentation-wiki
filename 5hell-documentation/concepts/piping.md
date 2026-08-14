@@ -1,6 +1,6 @@
 # Piping
 
-[Home](../../home.md) | [Getting Started](../../getting-started.md) | [Commands](../../command_index.md) | [Concepts](../concepts.md) | [Data Sets](../../data-sets.md) | [Tools](../../tools.md)
+[Home](../../home) | [Getting Started](../../getting-started) | [Commands](../../command_index) | [Concepts](../concepts) | [Data Sets](../../data-sets) | [Tools](../../tools)
 
 ## What Is Piping
 
@@ -36,6 +36,6 @@ Piping allows command chains where each stage transforms or consumes the previou
 
 ## Related Reading
 
-- [DO scripting and automation](do.md)
-- [Macros](macros.md)
-- [Dig command concepts](dig.md)
+- [DO scripting and automation](do)
+- [Macros](macros)
+- [Dig command concepts](dig)

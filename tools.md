@@ -1,6 +1,6 @@
 # Tools
 
-[Home](home.md) | [Getting Started](getting-started.md) | [Commands](command_index.md) | [Concepts](5hell-documentation/concepts.md) | [Data Sets](data-sets.md) | [Tools](tools.md)
+[Home](home) | [Getting Started](getting-started) | [Commands](command_index) | [Concepts](5hell-documentation/concepts) | [Data Sets](data-sets) | [Tools](tools)
 
 Community tools and ecosystem notes.
 

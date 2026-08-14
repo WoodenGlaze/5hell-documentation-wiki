@@ -1,12 +1,12 @@
 # Command Index
 
-[Home](home.md) | [Getting Started](getting-started.md) | [Commands](command_index.md) | [Concepts](5hell-documentation/concepts.md) | [Data Sets](data-sets.md) | [Tools](tools.md)
+[Home](home) | [Getting Started](getting-started) | [Commands](command_index) | [Concepts](5hell-documentation/concepts) | [Data Sets](data-sets) | [Tools](tools)
 
 This page is now the canonical entry point for command lookup.
 
 ## Primary Reference
 
-- Full command details: [5hell Command Reference](5hell-documentation/commands.md)
+- Full command details: [5hell Command Reference](5hell-documentation/commands)
 
 ## How To Use This Index
 
@@ -16,10 +16,10 @@ This page is now the canonical entry point for command lookup.
 
 ## Related Pages
 
-- Scripting and automation: [DO](5hell-documentation/concepts/do.md)
-- Piping behavior: [Piping](5hell-documentation/concepts/piping.md)
-- Dig workflows: [Dig](5hell-documentation/concepts/dig.md)
-- Dig examples: [Dig Examples](5hell-documentation/concepts/dig/examples.md)
+- Scripting and automation: [DO](5hell-documentation/concepts/do)
+- Piping behavior: [Piping](5hell-documentation/concepts/piping)
+- Dig workflows: [Dig](5hell-documentation/concepts/dig)
+- Dig examples: [Dig Examples](5hell-documentation/concepts/dig/examples)
 
 ## Why This Changed
 
