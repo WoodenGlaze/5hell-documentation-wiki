@@ -1,5 +1,9 @@
 # Command Reference Table (categories as columns)
 
+[Home](../home.md) | [Getting Started](../getting-started.md) | [Commands](../command_index.md) | [Concepts](concepts.md) | [Data Sets](../data-sets.md) | [Tools](../tools.md)
+
+Canonical command reference source.
+
 | Unix | Utility | Exploration | Exploitation/Pen-testing | File/Clipboard manipulation | Automation | Target Management | uncategorized | Proxying |
 |---|---|---|---|---|---|---|---|---|
 | [aptm](#aptm) | [bios](#bios) | [db](#db) | [air](#air) | [append](#append) | [dm](#dm) | [malp](#malp) | [calc](#calc) | [kraken](#kraken) |

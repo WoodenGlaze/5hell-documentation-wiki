@@ -1,54 +1,39 @@
-## Welcome to the unofficial Grey Hack documentation.
+# 5hell Documentation Wiki
 
-Welcome to Grey Hack!
+[Home](home.md) | [Getting Started](getting-started.md) | [Commands](command_index.md) | [Concepts](5hell-documentation/concepts.md) | [Data Sets](data-sets.md) | [Tools](tools.md)
 
-When you first start the game, you get dropped onto your very own Ellipse OS workstation.
+Community-maintained documentation for Grey Hack 5hell, organized for fast lookup and practical usage.
 
-However, we have several issues: We have no internet, we don't have a mail account or a web address.
+## Start Here
 
-### First steps: humble beginnings.
+- New to this wiki: [Getting Started](getting-started.md)
+- Need syntax fast: [Command Index](command_index.md)
+- Learning mechanics: [Concepts](5hell-documentation/concepts.md)
+- Researching vulnerabilities: [Data Sets](data-sets.md)
+- Looking for external tooling: [Tools](tools.md)
 
-As our first foray into hacking, we will get ourselves an internet connection, the cool way:
+## What This Site Covers
 
-#### Wifi hacking, step by step.
+- Command reference for core and advanced 5hell commands
+- Concept guides for automation, piping, dig workflows, and meta linking
+- Large data pages for exploit and library safety research
+- Community tool ecosystem notes
 
-1. Let's check what wifi networks are available to us, run `iwlist wlan0` in Terminal
-<pre>
-To make this process simpler, note down the strongest network, you will need its bssid and essid.
-</pre>
+## Reading Paths
 
-2. We need to prepare our system for cracking a network, we do this by enabling Monitor mode, to do so, run `airmon start wlan0`, this will enable monitor mode on wlan0, our wifi card. 
+### Reference-first path
 
-<pre>
-Monitor mode is a special mode of operation for wifi cards,
-and allows a user to direct the card to capture packets, 
-it also generally gives a user in real life more control over their card, 
-however, when its enabled, wifi access stops working
-(Which is why in real life, we use dongles with hardware that supports monitor instead of built in wifi cards)
-</pre>
+1. Open [Command Index](command_index.md)
+2. Jump to [5hell Command Reference](5hell-documentation/commands.md)
+3. Use [Concepts](5hell-documentation/concepts.md) for deeper mechanics
 
-3. When monitor mode is enabled, we can use our second wifi hardware command: `aireplay -b bssid -e essid`
-<pre>
-This command can fail, which means the router is patched, if thats the case, just pick a different one.
-Depending on the strength of the network, the amount of `ACK` packages required for a succesful attack will differ.
-Weaker networks can require up to 20,000 ACKs where a strong typically only requires 7,000 ACKs
+### Workflow path
 
-If you want to know the amount of ACKs required precisely, you can use the following formula: "300000 / (Power + 15)"
-</pre>
+1. Read [Getting Started](getting-started.md)
+2. Study [DO concept](5hell-documentation/concepts/do.md)
+3. Apply examples from [DO example scripts](5hell-documentation/concepts/do/example%20scripts.md)
 
-4. Once you've collected enough ACKs, you can press Ctrl + C, this will create a file in the same folder as you ran the command in, ie: /root
+## Notes
 
-5. Run `aircrack network_name.cap` where network_name is the name of the network you just assaulted.
-
-6. If everything went well, you should be able to connect to the cracked wifi!
-
-Once you're on a network, get yourself a mail account and read this wiki and the Manual on the desktop.
-
-### Next steps:
-
-Get your system secured:
-[[Security-How-to]]
-
-
-Read about 5hell here: 
-[[5Hell-Documentation]]
+- This wiki is unofficial and community-maintained.
+- Content accuracy can depend on game version.

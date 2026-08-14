@@ -1,5 +1,7 @@
 # Library safety — indexed
 
+[Home](../home.md) | [Getting Started](../getting-started.md) | [Commands](../command_index.md) | [Concepts](concepts.md) | [Data Sets](../data-sets.md) | [Tools](../tools.md)
+
 This document contains an index of libraries in the game greyhack.
 
  Please open an issue if you find any library classed as safe, and provide details about why you believe it isn't safe, so we can rectify it more easily. 

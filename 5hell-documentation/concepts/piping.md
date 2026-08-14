@@ -1,23 +1,41 @@
 # Piping
 
-## What is piping?
+[Home](../../home.md) | [Getting Started](../../getting-started.md) | [Commands](../../command_index.md) | [Concepts](../concepts.md) | [Data Sets](../../data-sets.md) | [Tools](../../tools.md)
 
-5hell supports piping, just like most fully equipped terminals,
-With piping you can send the output of a command to the next command in the same line.
+## What Is Piping
 
-This can be very useful when attempting to automate things.
-An example of a command chain would be:
+5hell supports piping, similar to other command-line environments. Piping sends the output of one command into the input of the next command on the same line.
 
-(With a file named targets in /root)
-`enum targets | enum -d dig`
+## Why It Matters
+
+- Makes automation shorter and clearer
+- Reduces temporary copy/paste steps
+- Enables composable workflows
+
+## Example
+
+With a file named targets in /root:
+
+```text
+enum targets | enum -d dig
+```
 
 Result:
-Dig gets executed on every ip on each new line in the file named targets
 
-Walkthrough:
-1. `enum targets` goes over every entry in the file named targets
-2. the `|` symbol transfers the output of that command into the next command
-3. `enum -d dig` uses the previously outputted IPs, and appends them to dig
+Dig executes on every IP on each new line in targets.
 
-### The lesson:
-Piping allows the output of commands on the left to be passed to the right, technically there is no limit to what commands you can pipe into.
+## Walkthrough
+
+1. enum targets reads each target entry.
+2. The | operator forwards that output.
+3. enum -d dig appends each entry to dig and executes.
+
+## Takeaway
+
+Piping allows command chains where each stage transforms or consumes the previous stage output.
+
+## Related Reading
+
+- [DO scripting and automation](do.md)
+- [Macros](macros.md)
+- [Dig command concepts](dig.md)

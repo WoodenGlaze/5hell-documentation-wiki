@@ -1,37 +1,58 @@
-# Example do files:
+# DO Example Scripts
 
-### do.rc examples
-#### Example do.rc for home server:
-```
+[Home](../../../home.md) | [Getting Started](../../../getting-started.md) | [Commands](../../../command_index.md) | [Concepts](../../concepts.md) | [Data Sets](../../../data-sets.md) | [Tools](../../../tools.md)
+
+Practical scripts for DO-based automation.
+
+## do.rc Example
+
+Example do.rc for a home server:
+
+```text
 # Runs kore -s on 5hell launch, pulls logs from proxies, and clears them, then goes through proxies to endpoint
 kore -s
 kraken -l
 prox
 ```
 
-### Provided example do scripts in 5hell:
+## Script 1
 
-#### Script 1:
-Setup (copy after the |> and paste into 5hell):
+Setup:
+
+```text
 |> clipa 0 | rnip 11 | enum | enum -s | do
 ```
+
+Script body:
+
+```text
 clipa | enum | probe
 clipa ++
 ```
-Result:
-set clipa to 0, produce 11 random ips, enumerate those ips, do 11 loops of: probe enum\[clipa\], clipa++
-this runs probe on 11 random ips stored in the enum(eration) buffer using calc and the clipboard to iterate through the list.
 
-#### Script 2:
-Setup (copy after the |> and paste into 5hell)
+Result:
+
+Creates 11 random IPs, enumerates them, then probes each target using clipboard-driven iteration.
+
+## Script 2
+
+Setup:
+
+```text
 |> clipa 1 | ls -a /lib | enum | enum -s | do
-Paste this Script : 
 ```
+
+Script body:
+
+```text
 clipa | enum | db -l
-clipa ++ 
+clipa ++
 ```
 
 Result:
-set clipa to 1, enumerate files in /lib, do [num_files+1] loops, start at 1 and run db (databaser) on each file, the error at the end is because ls returns with an extra blank line which gets enumerated at position [0] resulting in the loop being 1 over.
 
-(all commands are valid but note interactive commands will still require interaction)
+Enumerates /lib files and runs db -l across each entry. The final error is expected due to an extra blank line from ls.
+
+## Note
+
+All commands are valid, but interactive commands still require interaction.

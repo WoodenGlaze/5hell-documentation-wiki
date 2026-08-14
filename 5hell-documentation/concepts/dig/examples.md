@@ -1,17 +1,21 @@
-# Examples
+# Dig Examples
 
-## Example dig.bat scripts.
+[Home](../../../home.md) | [Getting Started](../../../getting-started.md) | [Commands](../../../command_index.md) | [Concepts](../../concepts.md) | [Data Sets](../../../data-sets.md) | [Tools](../../../tools.md)
+
+## Example dig.bat Scripts
 
 ### Network Nuker by Plu70
-#### Requirements:
-Library that returns a `root computer` object, for instance: `libhttp.so version 1.0.4`
 
-A guest running on the target router
+Requirements:
 
-#### Results:
+- A library that returns a root computer object, for example libhttp.so version 1.0.4
+- A guest running on the target router
+
+Result:
+
 Nukes the entire network, useful for corrupt data missions.
 
-```
+```text
 # new and imporived dig.bat pwner
 rshell @home
 brutus | gp -d " sc || mv /home/guest/rkit/libhttp.so /lib || return "
@@ -26,3 +30,9 @@ do @b toB
 sc -n @B 1
 exit y
 ```
+
+## Related Reading
+
+- [Dig command concepts](../dig.md)
+- [DO scripting and automation](../do.md)
+- [Piping command output](../piping.md)

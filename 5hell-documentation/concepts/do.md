@@ -1,4 +1,6 @@
 # DO || SCRIPTING || AUTOMATION || NOT BASH || BATCH COMMANDS || DORC || BASHRC
+[Home](../../home.md) | [Getting Started](../../getting-started.md) | [Commands](../../command_index.md) | [Concepts](../concepts.md) | [Data Sets](../../data-sets.md) | [Tools](../../tools.md)
+
 The scheduling or automation service for 5hell. You write a set of
 commands for 5hell to do. Commands may be entered in-line on the
 command line, entered into a text editor buffer, or read from a text file.
@@ -115,3 +117,9 @@ kore --silent
 # uncomment the line below if you uncommented the corresponding one at the top
 #kore --silent
 ```
+
+## Related Reading
+
+- [DO example scripts](do/example%20scripts.md)
+- [Piping command output](piping.md)
+- [Dig command concepts](dig.md)

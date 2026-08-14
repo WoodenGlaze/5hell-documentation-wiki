@@ -1,42 +1,62 @@
 # Dig
 
-## DIG v 2.1 Netcrawler || Autohacking || Automation
-Usage: `dig [-s|ip|port] [port|ip] [opt:--edit]` -- auto-infiltrate a target
-runs db on target [ip] and [port]
-infiltrates via shell if found.
+[Home](../../home.md) | [Getting Started](../../getting-started.md) | [Commands](../../command_index.md) | [Concepts](../concepts.md) | [Data Sets](../../data-sets.md) | [Tools](../../tools.md)
 
-uploads rkit and runs 5hell on the target
-gains root and wipes the log.
+DIG v2.1 netcrawler for automated target infiltration workflows.
 
-performs other taskes as defined by the user in dig.bat
-dig.bat may contain docalls (do # -f your.file) to daisy chain digs
+## Primary Usage
 
-Note: dig may take port and ip in any order
-not supplying a port defaults to port 0 aka the router
+```text
+dig [-s|ip|port] [port|ip] [opt:--edit]
+```
 
----
+Behavior summary:
 
-Usage: `dig -s` -- will scan the internet for a suitable target
-uses database.csv to choose targets with known kernel_router versions
-if the matched router has a shell exploit, dig will auto infiltrate as normal
-susses out random ips until a match is found
-sussing routers does not leave a log if no shell is found
+- Runs db on the target ip and port
+- Infiltrates via shell when available
+- Uploads rkit, runs 5hell on target, gains root, and wipes logs
+- Executes user-defined follow-up actions from dig.bat
 
-Note: edit /root/rkit/dig.bat to customize behavior
-by default you will be prompted to exit 5hell when dig completes
-type 'y' to exit and return to the script that launched dig
-or add quit dig_complete to exit automatically with an echo
+## Notes
 
-Note: supplying --edit as argument three will open dig.bat in scribus
-dig will continue as normal after editing is complete
-you may add/remove commands to be executed by dig here
+- IP and port may be supplied in either order.
+- If port is omitted, default is 0 (router port).
+- dig.bat can include DO calls to chain larger workflows.
 
-Note: supplying --edit as agrgument one will open dig.bat in scribus
-dig will then exit after editing the batch file.
+## Scan Mode
 
-### Usage examples:
-Usage example:|> `rnip 1 | dig`
+```text
+dig -s
+```
 
-Usage example:|> `dig 1.1.1.1 22 --edit`
+Scan mode behavior:
 
-Usage example:|> `do 20 dig -s`
+- Searches for suitable targets using database.csv
+- Matches known kernel_router versions
+- Attempts auto-infiltration when shell exploit conditions are met
+- Probes random IPs until a match is found
+
+## Edit Mode
+
+- Third argument --edit: opens dig.bat in scribus, then continues dig.
+- First argument --edit: opens dig.bat in scribus, then exits.
+
+## Examples
+
+```text
+rnip 1 | dig
+```
+
+```text
+dig 1.1.1.1 22 --edit
+```
+
+```text
+do 20 dig -s
+```
+
+## Related Reading
+
+- [Dig examples](dig/examples.md)
+- [DO scripting and automation](do.md)
+- [Piping command output](piping.md)

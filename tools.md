@@ -1,28 +1,40 @@
 # Tools
 
-### Currently maintained tools:
-Tools in this category are currently maintained and get updates on a (semi-)regular basis.
+[Home](home.md) | [Getting Started](getting-started.md) | [Commands](command_index.md) | [Concepts](5hell-documentation/concepts.md) | [Data Sets](data-sets.md) | [Tools](tools.md)
 
-#### Unity | MachaCeleste | Reason: Easy to use, easy to install, beginner friendly.
-Unity is a hacking tool for grey hack
+Community tools and ecosystem notes.
 
-Current status: **Maintained/Open Source!**
-Last update: **Jan 12th 2026**
-Where to get: [GitHub](https://github.com/MachaCeleste/CelestialCorp-Unity)
+## Maintained
 
-#### X | AWETux | Reason: Easy to use, has password tables, beginner friendly
-X is a hacking tool for grey hack
+Tools in this category are currently maintained and receive updates on a semi-regular basis.
 
-Current status: **Maintained/Closed Source**
-Last update: **Unknown to Wiki Author**
-Where to get: Contact AWETux/Linux-G
-#### Doom | Unknown to Author | 
+### Unity
 
+- Author: MachaCeleste
+- Reason: Easy to use, easy to install, beginner friendly
+- Status: Maintained, open source
+- Last update: Jan 12, 2026
+- Source: [GitHub](https://github.com/MachaCeleste/CelestialCorp-Unity)
 
-### "Unmaintained" tools:
-Tools in this category may not work with upcoming versions unless support is picked up again.
+### X
 
-#### Viper | Volk | Reason: Deprecation
-Viper is a ~~hacking~~ tool for grey hack
+- Author: AWETux
+- Reason: Easy to use, includes password tables, beginner friendly
+- Status: Maintained, closed source
+- Last update: Unknown
+- Access: Contact AWETux/Linux-G
 
-Current status: **UNMAINTAINED / Finally released as source**
+### Doom
+
+- Author: Unknown
+- Status: Information pending
+
+## Unmaintained
+
+Tools in this category may not work with upcoming versions unless maintenance is resumed.
+
+### Viper
+
+- Author: Volk
+- Reason: Deprecation
+- Status: Unmaintained, released as source
